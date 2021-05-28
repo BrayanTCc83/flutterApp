@@ -7,7 +7,6 @@ import 'package:flutter_app_new/components/activityCard.dart';
 import 'package:flutter_app_new/functions/files.dart';
 import 'package:flutter_app_new/global/cardImages.dart';
 import 'package:flutter_app_new/global/colors.dart';
-import 'package:flutter_app_new/providers/push_notification_provider.dart';
 import 'package:flutter_app_new/screen/createCardScreen.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -23,8 +22,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState(){
     super.initState();
-    final pushProvider = new PushNotificationProvider();
-    pushProvider.initNotifications();
   }
 
   _MyHomePageState({this.title}){
